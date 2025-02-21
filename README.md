@@ -7,7 +7,7 @@ If you want to see this document with all the results (numbers and
 plots) included, click [here](README_solutions.md).
 
 You can find the slides from the lecture
-[here](https://github.com/bodkan/ku-introgression2025/blob/main/2025-02-28%20lecture.pdf).
+[here](https://github.com/bodkan/ku-introgression2025/blob/main/lecture.pdf).
 
 ### Introduction
 
@@ -597,13 +597,3 @@ lines(bins, y, col = "red", lty = 2)
 If you want to take a closer look at how the tracts data was prepared
 (it was simulated!), you can see the complete code
 [here](generate_tracts.R).
-
----
-
-This work is licensed under a
-[Creative Commons Attribution 4.0 International License][cc-by].
-
-[![CC BY 4.0][cc-by-image]][cc-by]
-
-[cc-by]: http://creativecommons.org/licenses/by/4.0/
-[cc-by-image]: https://i.creativecommons.org/l/by/4.0/88x31.png
