@@ -302,6 +302,7 @@ abline(h = 3, lty = 2, col = "red")
 ------------------------------------------------------------------------
 
 If you want to take a closer look at how the genotype data was prepared (it was simulated!), you can see the complete code [here](generate_genotypes.R).
+
 <!--
 ## Exercise 3 -- dating Neanderthal admixture
 

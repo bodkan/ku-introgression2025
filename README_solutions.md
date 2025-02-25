@@ -425,35 +425,25 @@ abline(h = 3, lty = 2, col = "red")
 
 If you want to take a closer look at how the genotype data was prepared
 (it was simulated!), you can see the complete code
-[here](generate_genotypes.R). <!--
+[here](generate_genotypes.R).
+
+<!--
 ## Exercise 3 -- dating Neanderthal admixture
-
-(This exercise is a bonus for those of you who are already experts in R. If you're not very comfortable with R or population genetics, don't feel like you have to rush through the exercises to finish everything. You can take a look at this exercise at home, if you want.)
-
-### Introduction
-
-*You sequenced 100 diploid genomes from a Eurasian population and are interested in estimating the time of Neanderthal introgression into the ancestors of this population. The literature suggests that the introgression happened around 55 thousand years ago -- does this also apply to the population that you sequenced?*
-
-*To be able to do this, you ran an inference software which gives you the exact coordinates of Neanderthal DNA tracts present in every Eurasian genome that you sequenced. This of course means that you also know the lengths of each of those tracts.*
-
-*Use the distribution of the Neanderthal tract lengths in your population to estimate the time of Neanderthal introgression!*
-
-### Moving over to R
-
-Type `R` in your terminal or (better) just use RStudio R console if you have it.
-
-#### Task: Load and inspect the tracts data
-
-**First load the table with coordinates of all Neanderthal tracts** into R:
-
-
+&#10;(This exercise is a bonus for those of you who are already experts in R. If you're not very comfortable with R or population genetics, don't feel like you have to rush through the exercises to finish everything. You can take a look at this exercise at home, if you want.)
+&#10;### Introduction
+&#10;*You sequenced 100 diploid genomes from a Eurasian population and are interested in estimating the time of Neanderthal introgression into the ancestors of this population. The literature suggests that the introgression happened around 55 thousand years ago -- does this also apply to the population that you sequenced?*
+&#10;*To be able to do this, you ran an inference software which gives you the exact coordinates of Neanderthal DNA tracts present in every Eurasian genome that you sequenced. This of course means that you also know the lengths of each of those tracts.*
+&#10;*Use the distribution of the Neanderthal tract lengths in your population to estimate the time of Neanderthal introgression!*
+&#10;### Moving over to R
+&#10;Type `R` in your terminal or (better) just use RStudio R console if you have it.
+&#10;#### Task: Load and inspect the tracts data
+&#10;**First load the table with coordinates of all Neanderthal tracts** into R:
+&#10;
 ``` r
 tracts <- read.table(url("https://github.com/bodkan/ku-introgression2025/raw/main/tracts.tsv"), sep = "\t", header = TRUE)
 ```
-
-**Familiarize yourself with the data** by running this R command which shows information from only the first few genotypes:
-
-
+&#10;**Familiarize yourself with the data** by running this R command which shows information from only the first few genotypes:
+&#10;
 ``` r
 head(tracts)
 #>   individual     left    right length bin
@@ -464,32 +454,24 @@ head(tracts)
 #> 5      EUR_1 11360944 11448832  87888  12
 #> 6      EUR_1 14799338 14799442    104   1
 ```
-
-**For how many individuals do we have information about Neanderthal DNA tracts that they carry?**
-
-
+&#10;**For how many individuals do we have information about Neanderthal DNA tracts that they carry?**
+&#10;
 ``` r
 length(unique(tracts$individual))
 #> [1] 100
 ```
-
-#### Task: plot the distribution of tract lengths across bins
-
-It looks like the inference software (or a helpful bioinformatician) binned each tract according to its length (see the column `bin`). **What does the distribution of Neanderthal tract lengths looks like in your data?** Knowing that recombination has acted on the introgressed Neanderthal DNA over time, each generation, suggests that the distribution should look exponential -- do you see this in the data? To answer this, plot the proportion of tracts in each bin.
-
-
+&#10;#### Task: plot the distribution of tract lengths across bins
+&#10;It looks like the inference software (or a helpful bioinformatician) binned each tract according to its length (see the column `bin`). **What does the distribution of Neanderthal tract lengths looks like in your data?** Knowing that recombination has acted on the introgressed Neanderthal DNA over time, each generation, suggests that the distribution should look exponential -- do you see this in the data? To answer this, plot the proportion of tracts in each bin.
+&#10;
 ``` r
 # get the bin numbers
 bins <- sort(unique(tracts$bin))
-
-# count the tracts in each bin and compute the proportion of tracts in each bin
+&#10;# count the tracts in each bin and compute the proportion of tracts in each bin
 counts <- as.integer(table(tracts$bin))
 props <- counts / sum(counts)
-
-plot(bins, props, xlab = "Neanderthal tract length bin", ylab = "proportion of tracts")
+&#10;plot(bins, props, xlab = "Neanderthal tract length bin", ylab = "proportion of tracts")
 ```
-
-![](figures/tract_bins-1.png)<!-- -->
+&#10;![](figures/tract_bins-1.png)<!-- -->
 
 The distribution does, indeed, look quite exponential. **Next we will
 try to use this to date Neanderthal introgression using the information
