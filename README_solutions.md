@@ -1,7 +1,7 @@
 Archaic introgression lecture exercises (February 2025)
 ================
 
-## Exercise 1 – $f_4$ statistic / introgression test
+## Exercise 1 – testing introgression using the $f_4$ statistic
 
 If you want to see this document with all the solutions included, click
 [here](README_solutions.md) (but please try to solve the exercises on
