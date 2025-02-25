@@ -265,7 +265,7 @@ axis(side = 1, at = seq_along(X), labels = X)
 ![](figures/f4-1.png)<!-- -->
 
 We can see that the samples A-D are consistent with an $f_4$ statistic
-“value of about 0”“, meaning that the BABA and ABBA counts were”about
+“value of about 0”, meaning that the BABA and ABBA counts were “about
 the same”. This is what we would expect for African samples who are not
 expected to be closer to a Neanderthal genome than another African.
 
@@ -410,11 +410,11 @@ Eurasians? Do those numbers fit what you’ve learned from the lecture?**
 To make the results clearer to see, let’s visualize them:
 
 ``` r
-plot(proportions[-length(proportions)] * 100,
+plot(proportions[-length(proportions)] * 100, xaxt = "n",
      xlab = "test individual", ylab = "proportion of Neanderthal ancestry [%]",
      ylim = c(0, 10))
-
 abline(h = 3, lty = 2, col = "red")
+axis(side = 1, at = seq_along(X), labels = X)
 ```
 
 ![](figures/f4ratio-1.png)<!-- -->
