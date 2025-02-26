@@ -814,16 +814,16 @@ answer the questions from tasks above based on the results you get:</p>
 <span id="cb14-2"><a href="#cb14-2" tabindex="-1"></a></span>
 <span id="cb14-3"><a href="#cb14-3" tabindex="-1"></a>f4_values <span class="ot">&lt;-</span> <span class="fu">sapply</span>(X, <span class="cf">function</span>(x) {</span>
 <span id="cb14-4"><a href="#cb14-4" tabindex="-1"></a>  abba <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
-<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">==</span> gt[[<span class="st">&quot;Chimp&quot;</span>]]) <span class="sc">&amp;</span>         <span class="co"># filters for A**A sites</span></span>
-<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">!=</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]]) <span class="sc">&amp;</span>   <span class="co"># filters for A*B* sites</span></span>
-<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>    (gt[[x]]         <span class="sc">==</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]])     <span class="co"># filters for *BB* sites</span></span>
-<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a>  )                                              <span class="co"># together then ABBA</span></span>
+<span id="cb14-5"><a href="#cb14-5" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">==</span> gt[[<span class="st">&quot;Chimp&quot;</span>]]) <span class="sc">&amp;</span>         <span class="co"># filters for A__A sites</span></span>
+<span id="cb14-6"><a href="#cb14-6" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">!=</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]]) <span class="sc">&amp;</span>   <span class="co"># filters for A_B_ sites</span></span>
+<span id="cb14-7"><a href="#cb14-7" tabindex="-1"></a>    (gt[[x]]         <span class="sc">==</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]])     <span class="co"># filters for _BB_ sites</span></span>
+<span id="cb14-8"><a href="#cb14-8" tabindex="-1"></a>  )                                              <span class="co"># =&gt; all three filter for ABBA</span></span>
 <span id="cb14-9"><a href="#cb14-9" tabindex="-1"></a>  </span>
 <span id="cb14-10"><a href="#cb14-10" tabindex="-1"></a>  baba <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
-<span id="cb14-11"><a href="#cb14-11" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">!=</span> gt[[<span class="st">&quot;Chimp&quot;</span>]]) <span class="sc">&amp;</span>         <span class="co"># filters for B**A sites</span></span>
-<span id="cb14-12"><a href="#cb14-12" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">==</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]]) <span class="sc">&amp;</span>   <span class="co"># filters for B*B* sites</span></span>
-<span id="cb14-13"><a href="#cb14-13" tabindex="-1"></a>    (gt[[x]]         <span class="sc">==</span> gt[[<span class="st">&quot;Chimp&quot;</span>]])           <span class="co"># filters for *A*A sites</span></span>
-<span id="cb14-14"><a href="#cb14-14" tabindex="-1"></a>  )                                              <span class="co"># together then BABA</span></span>
+<span id="cb14-11"><a href="#cb14-11" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">!=</span> gt[[<span class="st">&quot;Chimp&quot;</span>]]) <span class="sc">&amp;</span>         <span class="co"># filters for B__A sites</span></span>
+<span id="cb14-12"><a href="#cb14-12" tabindex="-1"></a>    (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">==</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]]) <span class="sc">&amp;</span>   <span class="co"># filters for B_B_ sites</span></span>
+<span id="cb14-13"><a href="#cb14-13" tabindex="-1"></a>    (gt[[x]]         <span class="sc">==</span> gt[[<span class="st">&quot;Chimp&quot;</span>]])           <span class="co"># filters for _A_A sites</span></span>
+<span id="cb14-14"><a href="#cb14-14" tabindex="-1"></a>  )                                              <span class="co"># =&gt; all three filter for BABA</span></span>
 <span id="cb14-15"><a href="#cb14-15" tabindex="-1"></a>  </span>
 <span id="cb14-16"><a href="#cb14-16" tabindex="-1"></a>  (baba <span class="sc">-</span> abba) <span class="sc">/</span> <span class="fu">nrow</span>(gt)</span>
 <span id="cb14-17"><a href="#cb14-17" tabindex="-1"></a>})</span>

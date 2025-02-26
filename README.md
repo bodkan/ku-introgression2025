@@ -234,16 +234,16 @@ X <- c("A", "B", "C", "D", "E", "F", "G", "H")
 
 f4_values <- sapply(X, function(x) {
   abba <- sum(
-    (gt[["African"]] == gt[["Chimp"]]) &         # filters for A**A sites
-    (gt[["African"]] != gt[["Neanderthal"]]) &   # filters for A*B* sites
-    (gt[[x]]         == gt[["Neanderthal"]])     # filters for *BB* sites
-  )                                              # together then ABBA
+    (gt[["African"]] == gt[["Chimp"]]) &         # filters for A__A sites
+    (gt[["African"]] != gt[["Neanderthal"]]) &   # filters for A_B_ sites
+    (gt[[x]]         == gt[["Neanderthal"]])     # filters for _BB_ sites
+  )                                              # => all three filter for ABBA
   
   baba <- sum(
-    (gt[["African"]] != gt[["Chimp"]]) &         # filters for B**A sites
-    (gt[["African"]] == gt[["Neanderthal"]]) &   # filters for B*B* sites
-    (gt[[x]]         == gt[["Chimp"]])           # filters for *A*A sites
-  )                                              # together then BABA
+    (gt[["African"]] != gt[["Chimp"]]) &         # filters for B__A sites
+    (gt[["African"]] == gt[["Neanderthal"]]) &   # filters for B_B_ sites
+    (gt[[x]]         == gt[["Chimp"]])           # filters for _A_A sites
+  )                                              # => all three filter for BABA
   
   (baba - abba) / nrow(gt)
 })
