@@ -166,13 +166,13 @@ abba <- sum(
   (gt[["African"]] == gt[["Chimp"]]) &         # filters for A__A sites
   (gt[["African"]] != gt[["Neanderthal"]]) &   # filters for A_B_ sites
   (gt[[X]]         == gt[["Neanderthal"]])     # filters for _BB_ sites
-)                                              # together then ABBA
+)                                              # => all three filter for ABBA
 
 baba <- sum(
   (gt[["African"]] != gt[["Chimp"]]) &         # filters for B__A sites
   (gt[["African"]] == gt[["Neanderthal"]]) &   # filters for B_B_ sites
   (gt[[X]]         == gt[["Chimp"]])           # filters for _A_A sites
-)                                              # together then BABA
+)                                              # => all three filter for BABA
 ```
 
 From these counts, we can get an idea about whether one or the other are

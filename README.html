@@ -757,13 +757,13 @@ using this bit of R code:</p>
 <span id="cb10-5"><a href="#cb10-5" tabindex="-1"></a>  (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">==</span> gt[[<span class="st">&quot;Chimp&quot;</span>]]) <span class="sc">&amp;</span>         <span class="co"># filters for A__A sites</span></span>
 <span id="cb10-6"><a href="#cb10-6" tabindex="-1"></a>  (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">!=</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]]) <span class="sc">&amp;</span>   <span class="co"># filters for A_B_ sites</span></span>
 <span id="cb10-7"><a href="#cb10-7" tabindex="-1"></a>  (gt[[X]]         <span class="sc">==</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]])     <span class="co"># filters for _BB_ sites</span></span>
-<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>)                                              <span class="co"># together then ABBA</span></span>
+<span id="cb10-8"><a href="#cb10-8" tabindex="-1"></a>)                                              <span class="co"># =&gt; all three filter for ABBA</span></span>
 <span id="cb10-9"><a href="#cb10-9" tabindex="-1"></a></span>
 <span id="cb10-10"><a href="#cb10-10" tabindex="-1"></a>baba <span class="ot">&lt;-</span> <span class="fu">sum</span>(</span>
 <span id="cb10-11"><a href="#cb10-11" tabindex="-1"></a>  (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">!=</span> gt[[<span class="st">&quot;Chimp&quot;</span>]]) <span class="sc">&amp;</span>         <span class="co"># filters for B__A sites</span></span>
 <span id="cb10-12"><a href="#cb10-12" tabindex="-1"></a>  (gt[[<span class="st">&quot;African&quot;</span>]] <span class="sc">==</span> gt[[<span class="st">&quot;Neanderthal&quot;</span>]]) <span class="sc">&amp;</span>   <span class="co"># filters for B_B_ sites</span></span>
 <span id="cb10-13"><a href="#cb10-13" tabindex="-1"></a>  (gt[[X]]         <span class="sc">==</span> gt[[<span class="st">&quot;Chimp&quot;</span>]])           <span class="co"># filters for _A_A sites</span></span>
-<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>)                                              <span class="co"># together then BABA</span></span></code></pre></div>
+<span id="cb10-14"><a href="#cb10-14" tabindex="-1"></a>)                                              <span class="co"># =&gt; all three filter for BABA</span></span></code></pre></div>
 <p>From these counts, we can get an idea about whether one or the other
 are more frequently appearing in the data:</p>
 <div class="sourceCode" id="cb11"><pre class="sourceCode r"><code class="sourceCode r"><span id="cb11-1"><a href="#cb11-1" tabindex="-1"></a>baba <span class="sc">-</span> abba</span></code></pre></div>
