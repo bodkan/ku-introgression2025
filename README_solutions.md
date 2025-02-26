@@ -1,8 +1,6 @@
 Archaic introgression lecture exercises (February 2025)
 ================
 
-## Exercise 1: Testing introgression using the $f_4$ statistic
-
 **This document contains two simple exercises** for you to practice
 tests of introgression (and the quantification of the amount of
 introgression). **Each exercise is broken up in to Tasks, which are
@@ -17,6 +15,8 @@ same content as this one, except that each R code cell has its result
 
 You can find the slides from the lecture
 [here](https://github.com/bodkan/ku-introgression2025/blob/main/lecture.pdf).
+
+## Exercise 1: Testing introgression using the $f_4$ statistic
 
 ### Introduction
 
