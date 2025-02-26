@@ -192,6 +192,9 @@ f4_value <- (baba - abba) / nrow(gt)
 f4_value
 ```
 
+We will get to deciding whether this value is significant or not (and
+how to make sense of these numbers for our example data set) shortly.
+
 #### Task: Are ABBA or BABA sites the only ones in our data? For instance, can you find if there are any AAAB sites for the quartet $f_4(\textrm{AFR, X; NEA, Chimp})$? Why aren’t those useful for testing the evidence of Neanderthal introgression?
 
 ``` r
