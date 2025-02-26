@@ -216,10 +216,10 @@ how to make sense of these numbers for our example data set) shortly.
 X <- "A"
 
 aaab <- sum(
-  (gt[["African"]]     == gt[[X]]) &               # filters for AA** sites
-  (gt[[X]]             == gt[["Neanderthal"]]) &   # filters for *AA* sites
-  (gt[["Neanderthal"]] != gt[["Chimp"]])           # filters for **AB sites
-)
+  (gt[["African"]]     == gt[[X]]) &               # filters for AA__ sites
+  (gt[[X]]             == gt[["Neanderthal"]]) &   # filters for _AA_ sites
+  (gt[["Neanderthal"]] != gt[["Chimp"]])           # filters for __AB sites
+)                                                  # => all three filter for AAAB
 
 aaab
 #> [1] 770310
