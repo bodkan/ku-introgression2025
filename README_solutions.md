@@ -56,8 +56,9 @@ more negative).*
 **Type `R` in your terminal or (better) just use RStudio** R console if
 you have it. You can either do this on your own laptop (I recommend this
 option if you have R installed) or on the server you’ve worked on so
-far. **Create script (`File -> New File -> R Script` in RStudio, or just
-create it in any other text edit) and save it as `exercise1.R`.**
+far. **Create a script (`File -> New File -> R Script` in RStudio, or
+just create it in any other text edit) and save it as `exercise1.R`.**
+You’ll be writing your solutions to this exercise in that script.
 
 #### Task: Read and inspect the genotypes of all the sequenced samples
 
@@ -314,7 +315,7 @@ If you want to take a closer look at how the genotype data was prepared
 (it was simulated!), you can see the complete code
 [here](generate_genotypes.R).
 
-## Exercise 2 – estimating the proportion of Neanderthal ancestry
+## Exercise 2: Estimating the proportion of Neanderthal ancestry
 
 ### Introduction
 
@@ -335,8 +336,9 @@ samples!**
 
 ### Moving over to R
 
-**Create script (`File -> New File -> R Script` in RStudio, or just
-create it in any other text edit) and save it as `exercise2.R`.**
+**Create a script (`File -> New File -> R Script` in RStudio, or just
+create it in any other text edit) and save it as `exercise2.R`.** You’ll
+be writing your solutions to this exercise in that script.
 
 #### Task: Read and inspect the genotypes of all the sequenced samples
 
