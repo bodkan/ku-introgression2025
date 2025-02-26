@@ -28,7 +28,7 @@ You can find the slides from the lecture [here](https://github.com/bodkan/ku-int
 
 _You sequenced the genomes of four Africans and four Eurasians and got genotypes from a single chromosome from each of them (i.e., you have the genotypes of four African and four Eurasian chromosomes in total). Unfortunately, there's been a mix up in the lab and you don't know which one of them is African and which is Eurasian! You only know that they are labeled A, B, C, ..., H. What a disaster!_
 
-_Fortunately, you also have genotypes from three other individuals whose identity you know for certain: an African, a Neanderthal, and a chimpanzee. This means that you are able to compute an_ $f_4$ _statistic which will test for evidence of Neanderthal introgression in a some sample_ $X$.
+_Fortunately, you also have genotypes from three other individuals whose identity you know for certain: an African, a Neanderthal, and a chimpanzee. This means that you are able to compute an_ $f_4$ _statistic which will test for evidence of Neanderthal introgression in some sample_ $X$.
 
 _Can you save the day and determine which of the A, B, C, ..., H samples are probably African and which are Eurasian based on the following_ $f_4$ _statistic test?_
 
