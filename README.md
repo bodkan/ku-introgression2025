@@ -140,7 +140,7 @@ phylogenetic point of view?** (Recall what is the phylogenetic
 relationship between Africans, Eurasians, Neanderthals, and
 Chimpanzees).
 
-#### Task: Compute $f_4(\textrm{AFR, X; NEA, Chimp})$ for one of the unknown samples A-H
+#### Task: Compute $f_4(\textrm{AFR, X; NEA, Chimp})$ for one of the unknown samples A-H as `X` in this equation
 
 Above we computed alleles which *agree* between two samples.
 
