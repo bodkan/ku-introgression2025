@@ -14,7 +14,8 @@ same content as this one, except that each R code cell has its result
 (numbers, tables, plots) shown right under.
 
 You can find the slides from the lecture
-[here](https://github.com/bodkan/ku-introgression2025/blob/main/lecture.pdf).
+[here](https://github.com/bodkan/ku-introgression2025/blob/main/lecture.pdf)
+or on the Absalon page for today’s session.
 
 ## Exercise 1: Testing introgression using the $f_4$ statistic
 
