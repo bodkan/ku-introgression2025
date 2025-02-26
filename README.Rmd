@@ -28,15 +28,15 @@ You can find the slides from the lecture [here](https://github.com/bodkan/ku-int
 
 _You sequenced the genomes of four Africans and four Eurasians and got genotypes from a single chromosome from each of them (i.e., you have the genotypes of four African and four Eurasian chromosomes in total). Unfortunately, there's been a mix up in the lab and you don't know which one of them is African and which is Eurasian! You only know that they are labeled A, B, C, ..., H. What a disaster!_
 
-_Fortunately, you also have genotypes from three other individuals whose identity you know for certain: an African, a Neanderthal, and a chimpanzee. This means that you are able to compute an $f_4$ statistic which will test for evidence of Neanderthal introgression in a given some sample $X$._
+_Fortunately, you also have genotypes from three other individuals whose identity you know for certain: an African, a Neanderthal, and a chimpanzee. This means that you are able to compute an_ $f_4$ _statistic which will test for evidence of Neanderthal introgression in a given some sample_ $X$.
 
-_Can you save the day and determine which of the A, B, C, ..., H samples are probably African and which are Eurasian based on the following $f_4$ statistic test?_
+_Can you save the day and determine which of the A, B, C, ..., H samples are probably African and which are Eurasian based on the following_ $f_4$ _statistic test?_
 
 $$
 f_4(\textrm{African}, X; \textrm{Neanderthal}, \textrm{Chimp}).
 $$
 
-_Recall that only Eurasians are expected to have appreciable amounts of Neanderthal ancestry but Africans don't. So, hopefully, by computing this statistic for all of the mixed up samples A, B, C, etc. (i.e., computing it for each of them in place of X, one after another), you should be able to determine who is likely African (these won't show evidence of Neanderthal introgression, giving $f_4$ values close to zero) and who is Eurasian (these will give $f_4$ values significantly more negative)._
+_Recall that only Eurasians are expected to have appreciable amounts of Neanderthal ancestry but Africans don't. So, hopefully, by computing this statistic for all of the mixed up samples A, B, C, etc. (i.e., computing it for each of them in place of X, one after another), you should be able to determine who is likely African (these won't show evidence of Neanderthal introgression, giving_ $f_4$ _values close to zero) and who is Eurasian (these will give_ $f_4$ _values significantly more negative)._
 
 ### Moving over to R
 
@@ -224,9 +224,9 @@ If you want to take a closer look at how the genotype data was prepared (it was 
 
 ### Introduction
 
-_Having saved the day by identifying which of the A-H samples are of African or Eurasian origin by testing which of them appear to carry evidence of Neanderthal introgression, you now want to estimate how much of their genome derives from the Neanderthals. In order to do this, you need to compute a ratio of $f_4$ values as described in the lecture._
+_Having saved the day by identifying which of the A-H samples are of African or Eurasian origin by testing which of them appear to carry evidence of Neanderthal introgression, you now want to estimate how much of their genome derives from the Neanderthals. In order to do this, you need to compute a ratio of_ $f_4$ _values as described in the lecture._
 
-_Of course, in order to compute this $f_4$-ratio estimate, you will need "another Neanderthal" genome! Luckily, we now have genomes of several Neanderthals so this is not an issue and a local friendly bioinformatician has already presciently merged your `gt` genotype table from the first exercise with the genotypes of "another Neanderthal"._
+_Of course, in order to compute this_ $f_4$ _-ratio estimate, you will need "another Neanderthal" genome! Luckily, we now have genomes of several Neanderthals so this is not an issue and a local friendly bioinformatician has already presciently merged your `gt` genotype table from the first exercise with the genotypes of "another Neanderthal"._
 
 **Estimate the proportion of Neanderthal ancestry in each of your A-H samples!**
 

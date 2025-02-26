@@ -30,13 +30,13 @@ are labeled A, B, C, …, H. What a disaster!*
 
 *Fortunately, you also have genotypes from three other individuals whose
 identity you know for certain: an African, a Neanderthal, and a
-chimpanzee. This means that you are able to compute an $f_4$ statistic
+chimpanzee. This means that you are able to compute an* $f_4$ *statistic
 which will test for evidence of Neanderthal introgression in a given
-some sample $X$.*
+some sample* $X$.
 
 *Can you save the day and determine which of the A, B, C, …, H samples
-are probably African and which are Eurasian based on the following $f_4$
-statistic test?*
+are probably African and which are Eurasian based on the following*
+$f_4$ *statistic test?*
 
 $$
 f_4(\textrm{African}, X; \textrm{Neanderthal}, \textrm{Chimp}).
@@ -47,8 +47,8 @@ Neanderthal ancestry but Africans don’t. So, hopefully, by computing
 this statistic for all of the mixed up samples A, B, C, etc. (i.e.,
 computing it for each of them in place of X, one after another), you
 should be able to determine who is likely African (these won’t show
-evidence of Neanderthal introgression, giving $f_4$ values close to
-zero) and who is Eurasian (these will give $f_4$ values significantly
+evidence of Neanderthal introgression, giving* $f_4$ *values close to
+zero) and who is Eurasian (these will give* $f_4$ *values significantly
 more negative).*
 
 ### Moving over to R
@@ -295,11 +295,11 @@ If you want to take a closer look at how the genotype data was prepared
 African or Eurasian origin by testing which of them appear to carry
 evidence of Neanderthal introgression, you now want to estimate how much
 of their genome derives from the Neanderthals. In order to do this, you
-need to compute a ratio of $f_4$ values as described in the lecture.*
+need to compute a ratio of* $f_4$ *values as described in the lecture.*
 
-*Of course, in order to compute this $f_4$-ratio estimate, you will need
-“another Neanderthal” genome! Luckily, we now have genomes of several
-Neanderthals so this is not an issue and a local friendly
+*Of course, in order to compute this* $f_4$ *-ratio estimate, you will
+need “another Neanderthal” genome! Luckily, we now have genomes of
+several Neanderthals so this is not an issue and a local friendly
 bioinformatician has already presciently merged your `gt` genotype table
 from the first exercise with the genotypes of “another Neanderthal”.*
 
