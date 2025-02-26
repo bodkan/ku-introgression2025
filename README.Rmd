@@ -40,7 +40,7 @@ _Recall that only Eurasians are expected to have appreciable amounts of Neandert
 
 ### Moving over to R
 
-Type `R` in your terminal or (better) just use RStudio R console if you have it. You can either do this on your own laptop (I recommend this option if you have R installed) or on the server you've worked on so far.
+**Type `R` in your terminal or (better) just use RStudio** R console if you have it. You can either do this on your own laptop (I recommend this option if you have R installed) or on the server you've worked on so far. **Create script (`File -> New File -> R Script` in RStudio, or just create it in any other text edit) and save it as `exercise1.R`.**
 
 #### Task: Read and inspect the genotypes of all the sequenced samples
 
@@ -232,7 +232,7 @@ _Of course, in order to compute this $f_4$-ratio estimate, you will need "anothe
 
 ### Moving over to R
 
-Type `R` in your terminal or (better) just use RStudio R console if you have it.
+**Create script (`File -> New File -> R Script` in RStudio, or just create it in any other text edit) and save it as `exercise2.R`.**
 
 #### Task: Read and inspect the genotypes of all the sequenced samples
 

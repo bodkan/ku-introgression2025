@@ -52,10 +52,11 @@ more negative).*
 
 ### Moving over to R
 
-Type `R` in your terminal or (better) just use RStudio R console if you
-have it. You can either do this on your own laptop (I recommend this
+**Type `R` in your terminal or (better) just use RStudio** R console if
+you have it. You can either do this on your own laptop (I recommend this
 option if you have R installed) or on the server you’ve worked on so
-far.
+far. **Create script (`File -> New File -> R Script` in RStudio, or just
+create it in any other text edit) and save it as `exercise1.R`.**
 
 #### Task: Read and inspect the genotypes of all the sequenced samples
 
@@ -333,8 +334,8 @@ samples!**
 
 ### Moving over to R
 
-Type `R` in your terminal or (better) just use RStudio R console if you
-have it.
+**Create script (`File -> New File -> R Script` in RStudio, or just
+create it in any other text edit) and save it as `exercise2.R`.**
 
 #### Task: Read and inspect the genotypes of all the sequenced samples
 
